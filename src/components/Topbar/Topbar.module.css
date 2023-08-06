@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+  .main_nav {
+    gap: 2rem;
+  }
+}
+
+.nav {
+  font-family: "heebo", sans-serif;
+}
