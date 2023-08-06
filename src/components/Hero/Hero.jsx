@@ -1,6 +1,5 @@
 import classes from "./Hero.module.css";
 import { PiCaretDownBold } from "react-icons/pi";
-import { BsWhatsapp } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 const Hero = () => {
   return (

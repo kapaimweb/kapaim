@@ -1,4 +1,5 @@
 import Home from "./pages/Home";
+import "./scrollstyle.css";
 function App() {
   return (
     <>
