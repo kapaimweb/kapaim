@@ -16,7 +16,8 @@ const Topbar = () => {
           <Nav className={`${classes.main_nav} me-auto`}>
             <Nav.Link href=''>דף הבית</Nav.Link>
             <Nav.Link href=''>קצת עלינו</Nav.Link>
-            <Nav.Link href=''>קצת עלינו</Nav.Link>
+            <Nav.Link href=''>וידאו </Nav.Link>
+            <Nav.Link href=''>צרו קשר </Nav.Link>
           </Nav>
           <Nav className='me-auto'>
             <Nav.Link href=''>

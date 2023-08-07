@@ -8,3 +8,27 @@
   font-family: "suez one", sans-serif;
   margin-bottom: 40px;
 }
+
+.heebo {
+  font-family: "heebo", sans-serif;
+}
+
+.submitbtn {
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  .submit {
+    padding-block: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
+}
+
+@media (max-width: 991px) {
+  .submit {
+    display: flex;
+    justify-content: center;
+  }
+}

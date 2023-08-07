@@ -2,7 +2,6 @@ import classes from "./Contact.module.css";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -14,29 +13,31 @@ const Contact = () => {
           <h2 className={classes.contact_h}>צרו קשר</h2>
         </Row>
         <Row>
-          <Form>
-            <Col xl={4}>
-              <Form.Group className='mb-4' controlId='validationCustom01'>
-                <Form.Label>שם</Form.Label>
-                <Form.Control required type='text' />
-              </Form.Group>
-              <Form.Group className='mb-4' controlId='validationCustom01'>
-                <Form.Label>טלפון</Form.Label>
-                <Form.Control required type='text' />
-              </Form.Group>
-              <Form.Group className='mb-4' controlId='validationCustom01'>
-                <Form.Label>אימייל</Form.Label>
-                <Form.Control required type='text' />
-              </Form.Group>
-            </Col>
-            <Col xl={4}></Col>
-            <Col xl={4}>
-              <Form.Group className='mb-4' controlId='validationCustom01'>
-                <Form.Label>הודעה:</Form.Label>
-                <Form.Control required type='textarea' />
-              </Form.Group>
-            </Col>
-          </Form>
+          <Col lg={4} xl={4}>
+            <Form.Group className='mb-4'>
+              <Form.Label className={classes.heebo}>שם</Form.Label>
+              <Form.Control required type='text' />
+            </Form.Group>
+            <Form.Group className='mb-4'>
+              <Form.Label className={classes.heebo}>טלפון</Form.Label>
+              <Form.Control required type='' />
+            </Form.Group>
+            <Form.Group className='mb-4'>
+              <Form.Label className={classes.heebo}>אימייל</Form.Label>
+              <Form.Control required type='email' />
+            </Form.Group>
+          </Col>
+          <Col lg={6} xl={6}>
+            <Form.Group className='mb-4'>
+              <Form.Label className={classes.heebo}>הודעה</Form.Label>
+              <Form.Control className='py-2' rows={9} required as='textarea' />
+            </Form.Group>
+          </Col>
+          <Col className={classes.submit} lg={2} xl={2}>
+            <Button className={classes.submitbtn} variant='secondary'>
+              שלח
+            </Button>
+          </Col>
         </Row>
       </Container>
     </div>
