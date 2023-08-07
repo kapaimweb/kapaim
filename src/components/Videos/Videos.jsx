@@ -78,7 +78,7 @@ const Videos = () => {
                     <Card.Body>
                       <YouTube
                         videoId={video.id}
-                        className='youtube-player'
+                        className={classes.youtube}
                         opts={{
                           width: "100%",
                           playerVars: {
