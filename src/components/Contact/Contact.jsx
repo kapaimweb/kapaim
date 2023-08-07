@@ -1,21 +1,28 @@
+//css
 import classes from "./Contact.module.css";
-
+//
+import { useRef } from "react";
+//bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+
+//
 const Contact = () => {
+  const formRef = useRef(null);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const form = event.target;
+    const form = formRef.current;
     const data = new FormData(form);
     fetch("/", {
       method: "POST",
       body: data,
     })
       .then(() => {
-        console.log("success");
+        form.reset();
       })
       .catch((error) => {
         console.log(error);
@@ -27,7 +34,7 @@ const Contact = () => {
         <Row>
           <h2 className={classes.contact_h}>צרו קשר</h2>
         </Row>
-        <Form onSubmit={handleSubmit} name='contact'>
+        <Form ref={formRef} onSubmit={handleSubmit} name='contact'>
           {/*this is for netlify bot to detect the form */}
           <input type='hidden' name='form-name' value='contact' />
           {/*  */}
