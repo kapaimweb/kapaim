@@ -17,16 +17,21 @@
   width: 100%;
 }
 
-.content h1 {
+/* .content h1 {
   font-family: "suez one", sans-serif;
   font-size: 6.5rem;
   margin-block: 20px;
+} */
+
+.logo_img {
+  width: 25%;
+  margin-bottom: 40px;
 }
 
 .content p {
   font-family: "heebo", sans-serif;
   font-size: 1.4rem;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .content button {
@@ -35,7 +40,6 @@
 }
 
 .cta {
-  width: 200px;
   font-family: "heebo", sans-serif;
 }
 
@@ -46,11 +50,11 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: #f7d6ab;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
-  width: 70px;
-  height: 70px;
-  background-color: rgba(41, 55, 142, 0.8);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(41, 55, 142, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +65,21 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 1399px) {
+  .logo_img {
+    width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .logo_img {
+    width: 35%;
+  }
+}
+
 @media (max-width: 991px) {
+  .logo_img {
+    width: 60%;
+  }
   .hero {
     background-image: url("../../images/background_mobile.jpg");
     background-size: contain;
@@ -69,11 +87,32 @@
   }
 
   .content {
-    top: 40%;
+    top: 32%;
     width: 60%;
   }
 
   .content h1 {
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo_img {
+    width: 65%;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo_img {
+    width: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .logo_img {
+    width: 100%;
+  }
+
+  .caret_wrap {
+    bottom: 25%;
   }
 }
