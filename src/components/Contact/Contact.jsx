@@ -6,16 +6,13 @@ import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 const Contact = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
   return (
     <div className={classes.contact}>
       <Container>
         <Row>
           <h2 className={classes.contact_h}>צרו קשר</h2>
         </Row>
-        <Form name='contact' method='POST' data-netlify='true' onSubmit={handleSubmit}>
+        <form name='contact' data-netlify='true'>
           <Row>
             <Col lg={4} xl={4}>
               <Form.Group className='mb-4'>
@@ -43,7 +40,7 @@ const Contact = () => {
               </Button>
             </Col>
           </Row>
-        </Form>
+        </form>
       </Container>
     </div>
   );
