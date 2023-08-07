@@ -10,7 +10,7 @@ const Topbar = () => {
 
   const handleScroll = () => {
     // Check the scrolling position of the window
-    const isTop = window.scrollY <= 96;
+    const isTop = window.scrollY <= 30;
 
     // Update the state based on the scrolling position
     setIsScrolled(!isTop);
