@@ -34,8 +34,8 @@ const About = () => {
             </p>
             <p>
               להקת כפיים הם: <strong>אשר קרוגר</strong>- גיטרה ושירה | <strong>גיא רודוביץ'</strong>- סקסופונים |
-              <strong>אילן זיו</strong>- אקורדיון | <strong>אבירם קושניר</strong> - גיטרה בס | <strong>דר לוי</strong> -
-              תופים
+              <strong> אילן זיו</strong>- אקורדיון | <strong>אבירם קושניר</strong> - גיטרה בס | <strong>דר לוי</strong>{" "}
+              - תופים
             </p>
           </Col>
         </Row>
