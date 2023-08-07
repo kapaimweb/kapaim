@@ -35,7 +35,7 @@ const Videos = () => {
     }
   };
   return (
-    <div className={classes.videos}>
+    <div id='videos' className={classes.videos}>
       <Container>
         <Row>
           <h2 className={classes.videos_h}>מה אנחנו מנגנים</h2>

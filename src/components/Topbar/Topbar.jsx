@@ -39,19 +39,19 @@ const Topbar = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className={`${classes.main_nav} me-auto`}>
-            <Nav.Link href=''>דף הבית</Nav.Link>
-            <Nav.Link href=''>קצת עלינו</Nav.Link>
-            <Nav.Link href=''>וידאו </Nav.Link>
-            <Nav.Link href=''>צרו קשר </Nav.Link>
+            <Nav.Link href='#hero'>דף הבית</Nav.Link>
+            <Nav.Link href='#about'>קצת עלינו</Nav.Link>
+            <Nav.Link href='#videos'>וידאו </Nav.Link>
+            <Nav.Link href='#contact'>צרו קשר </Nav.Link>
           </Nav>
           <Nav className='me-auto'>
-            <Nav.Link href=''>
+            <Nav.Link href='https://www.facebook.com/kapaym'>
               <BsFacebook />
             </Nav.Link>
-            <Nav.Link href=''>
+            <Nav.Link href='https://www.youtube.com/@kapaim9463'>
               <BsYoutube />
             </Nav.Link>
-            <Nav.Link href=''>
+            <Nav.Link href='https://www.instagram.com/kapaimband/'>
               <BsInstagram />
             </Nav.Link>
           </Nav>

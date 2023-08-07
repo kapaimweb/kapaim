@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 
 const Hero = () => {
   return (
-    <div className={classes.hero}>
+    <div id='hero' className={classes.hero}>
       <div className={classes.content}>
         <h1>להקת כפיים</h1>
         <p>חגיגה ישראלית של גרוב ים-תיכוני בלקני</p>
@@ -14,8 +14,12 @@ const Hero = () => {
           דברו איתנו
         </Button>
       </div>
-      <div className={classes.caret}>
-        <PiCaretDownBold />
+      <div className={classes.caret_wrap}>
+        <div className={classes.caret}>
+          <a href='#about'>
+            <PiCaretDownBold />
+          </a>
+        </div>
       </div>
     </div>
   );

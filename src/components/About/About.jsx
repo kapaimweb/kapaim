@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import classes from "./About.module.css";
 const About = () => {
   return (
-    <div className={classes.about}>
+    <div id='about' className={classes.about}>
       <Container>
         <Row>
           <h2 className={classes.about_h}>עלינו</h2>

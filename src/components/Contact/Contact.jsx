@@ -34,7 +34,7 @@ const Contact = () => {
       });
   };
   return (
-    <div className={classes.contact}>
+    <div id='contact' className={classes.contact}>
       <Container>
         <Row>
           <h2 className={classes.contact_h}>צרו קשר</h2>
@@ -46,22 +46,22 @@ const Contact = () => {
           <Row>
             <Col lg={4} xl={4}>
               <Form.Group className='mb-4'>
-                <Form.Label className={classes.heebo}>שם</Form.Label>
-                <Form.Control name='name' required type='text' />
+                {/* <Form.Label className={classes.heebo}>שם</Form.Label> */}
+                <Form.Control placeholder='שם' name='name' required type='text' />
               </Form.Group>
               <Form.Group className='mb-4'>
-                <Form.Label className={classes.heebo}>טלפון</Form.Label>
-                <Form.Control name='phone' required type='' />
+                {/* <Form.Label className={classes.heebo}>טלפון</Form.Label> */}
+                <Form.Control placeholder='טלפון' name='phone' required type='' />
               </Form.Group>
               <Form.Group className='mb-4'>
-                <Form.Label className={classes.heebo}>אימייל</Form.Label>
-                <Form.Control name='email' required type='email' />
+                {/* <Form.Label className={classes.heebo}>אימייל</Form.Label> */}
+                <Form.Control placeholder='אימייל' name='email' required type='email' />
               </Form.Group>
             </Col>
             <Col lg={6} xl={6}>
               <Form.Group className='mb-4'>
-                <Form.Label className={classes.heebo}>הודעה</Form.Label>
-                <Form.Control name='message' className='py-2' rows={9} required as='textarea' />
+                {/* <Form.Label className={classes.heebo}>הודעה</Form.Label> */}
+                <Form.Control placeholder='הודעה' name='message' className='py-2' rows={6} required as='textarea' />
               </Form.Group>
             </Col>
             <Col className={classes.submit} lg={2} xl={2}>

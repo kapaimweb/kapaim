@@ -39,7 +39,7 @@
   font-family: "heebo", sans-serif;
 }
 
-.caret {
+.caret_wrap {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -48,6 +48,17 @@
   color: #f7d6ab;
   font-size: 3rem;
   cursor: pointer;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(41, 55, 142, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.caret {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {

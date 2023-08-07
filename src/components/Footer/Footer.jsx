@@ -25,13 +25,13 @@ const Footer = () => {
           </Col>
           <Col className='align-self-center' lg={6}>
             <Nav className={classes.footer_links}>
-              <Nav.Link href=''>
-                <BsFacebook className={classes.footer_links_link} />
+              <Nav.Link href='https://www.facebook.com/kapaym'>
+                <BsFacebook />
               </Nav.Link>
-              <Nav.Link href=''>
+              <Nav.Link href='https://www.youtube.com/@kapaim9463'>
                 <BsYoutube />
               </Nav.Link>
-              <Nav.Link href=''>
+              <Nav.Link href='https://www.instagram.com/kapaimband/'>
                 <BsInstagram />
               </Nav.Link>
             </Nav>

@@ -2152,11 +2152,13 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--bs-body-color);
+  /* color: var(--bs-body-color); */
+  color: #29378e;
+  font-family: "heebo", sans-serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: var(--bs-body-bg);
+  background-color: #fff;
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
@@ -2174,8 +2176,10 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
+  /* color: var(--bs-body-color); */
+  color: #29378e;
+  /* background-color: var(--bs-body-bg); */
+  background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -2190,12 +2194,16 @@ progress {
   padding: 0;
 }
 .form-control::-moz-placeholder {
-  color: var(--bs-secondary-color);
+  /* color: var(--bs-secondary-color); */
+  color: #29378e;
   opacity: 1;
+  font-family: "heebo", sans-serif;
 }
 .form-control::placeholder {
-  color: var(--bs-secondary-color);
+  /* color: var(--bs-secondary-color); */
+  color: #29378e;
   opacity: 1;
+  font-family: "heebo", sans-serif;
 }
 .form-control:disabled {
   background-color: var(--bs-secondary-bg);
