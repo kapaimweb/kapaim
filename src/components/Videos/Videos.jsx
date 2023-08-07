@@ -1,8 +1,13 @@
 //css
 import classes from "./Videos.module.css";
+//icons
+import { PiCaretRightBold, PiCaretLeftBold } from "react-icons/pi";
 //swiper
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
+
 //react-youtube
 import YouTube from "react-youtube"; // Import the react-youtube library
 //bootstrap
@@ -12,8 +17,23 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 //videoList
 import videoList from "./videoList";
+//
+import { useState } from "react";
 
 const Videos = () => {
+  const [swiperInstance, setSwiperInstance] = useState(null);
+
+  const handlePrevSlide = () => {
+    if (swiperInstance) {
+      swiperInstance.slidePrev();
+    }
+  };
+
+  const handleNextSlide = () => {
+    if (swiperInstance) {
+      swiperInstance.slideNext();
+    }
+  };
   return (
     <div className={classes.videos}>
       <Container>
@@ -22,7 +42,35 @@ const Videos = () => {
         </Row>
         <Row>
           <Col>
-            <Swiper grabCursor='true' spaceBetween={50} slidesPerView={3}>
+            <Swiper
+              loop={true}
+              onSwiper={setSwiperInstance}
+              modules={[Navigation, Pagination]}
+              navigation={{
+                prevEl: ".prevButton",
+                nextEl: ".nextButton",
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                992: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+              }}
+              grabCursor='true'
+              spaceBetween={10}
+              slidesPerView={1}>
               {videoList.map((video) => (
                 <SwiperSlide key={video.id}>
                   <Card className='text-center'>
@@ -44,6 +92,14 @@ const Videos = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <div className={classes.navigationArrows}>
+              <button className={classes.prevButton} onClick={handlePrevSlide}>
+                <PiCaretRightBold />
+              </button>
+              <button className={classes.nextButton} onClick={handleNextSlide}>
+                <PiCaretLeftBold />
+              </button>
+            </div>
           </Col>
         </Row>
       </Container>
