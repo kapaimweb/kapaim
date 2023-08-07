@@ -1,16 +1,20 @@
 //css
 import classes from "./Contact.module.css";
 //
-import { useRef } from "react";
+import { useRef, useState } from "react";
 //bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
 
 //
 const Contact = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+
   const formRef = useRef(null);
 
   const handleSubmit = (event) => {
@@ -22,6 +26,7 @@ const Contact = () => {
       body: data,
     })
       .then(() => {
+        setShow(true);
         form.reset();
       })
       .catch((error) => {
@@ -67,6 +72,19 @@ const Contact = () => {
           </Row>
         </Form>
       </Container>
+
+      {/* modal to confirm form */}
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header>
+          <Modal.Title> תודה שפניתם אלינו</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>קיבלנו את הפנייה שלכם ונחזור אליכם בהקדם!</Modal.Body>
+        <Modal.Footer>
+          <Button variant='primary' onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
