@@ -15,6 +15,7 @@
 
 .submitbtn {
   width: 100%;
+  font-family: "heebo", sans-serif;
 }
 
 @media (min-width: 991px) {

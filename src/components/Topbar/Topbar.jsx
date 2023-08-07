@@ -1,12 +1,37 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import logo from "../../images/logo.png";
+import { useState, useEffect } from "react";
 
 //css
 import classes from "./Topbar.module.css";
 const Topbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    // Check the scrolling position of the window
+    const isTop = window.scrollY <= 96;
+
+    // Update the state based on the scrolling position
+    setIsScrolled(!isTop);
+  };
+
+  useEffect(() => {
+    // Add the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <Navbar bg='transparent' className={classes.nav} collapseOnSelect fixed='top' expand='lg'>
+    <Navbar
+      bg={isScrolled ? "secondary" : "tranparent"}
+      className={classes.nav}
+      collapseOnSelect
+      fixed='top'
+      expand='lg'>
       <Container>
         <Navbar.Brand href=''>
           <img src={logo} width='70' height='70' className='d-inline-block align-top' alt='Kapaim Band Logo' />
