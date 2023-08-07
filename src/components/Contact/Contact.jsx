@@ -12,7 +12,7 @@ const Contact = () => {
         <Row>
           <h2 className={classes.contact_h}>צרו קשר</h2>
         </Row>
-        <Form>
+        <Form name='contact' netlify>
           <Row>
             <Col lg={4} xl={4}>
               <Form.Group className='mb-4'>
