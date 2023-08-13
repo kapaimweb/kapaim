@@ -7,7 +7,6 @@ const Hero = () => {
   return (
     <div id='hero' className={classes.hero}>
       <div className={classes.content}>
-        {/* <h1>להקת כפיים</h1> */}
         <img src={logo_text} alt='kapaim logo' className={classes.logo_img} />
         <p>חגיגה ישראלית של גרוב ים-תיכוני בלקני</p>
         <Button

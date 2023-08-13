@@ -1,6 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+//react-youtube
+import YouTube from "react-youtube"; // Import the react-youtube library
 //css
 import classes from "./About.module.css";
 const About = () => {
@@ -37,6 +40,26 @@ const About = () => {
               <strong> אילן זיו</strong>- אקורדיון | <strong>אבירם קושניר</strong> - גיטרה בס | <strong>דר לוי</strong>{" "}
               - תופים
             </p>
+          </Col>
+        </Row>
+        <Row className='justify-content-center'>
+          <Col lg={6}>
+            <Card className='text-center'>
+              <Card.Header> </Card.Header>
+              <Card.Body>
+                <YouTube
+                  videoId='8G0N8GPtbIQ'
+                  className={classes.youtube}
+                  opts={{
+                    width: "100%",
+                    playerVars: {
+                      autoplay: 0,
+                      controls: 0,
+                    },
+                  }}
+                />
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>

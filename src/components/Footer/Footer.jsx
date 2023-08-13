@@ -20,7 +20,7 @@ const Footer = () => {
               <div>
                 טלפון: <a href='tel:055-566-8759'>055-566-8759</a>
               </div>
-              מייל: <a href='mailto:kapaimband@gmail.com'>KapaimBand@gmail.com</a>
+              מייל: <a href='mailto:kapaimband@gmail.com'> kapaim.live@gmail.com</a>
             </div>
           </Col>
           <Col className='align-self-center' lg={6}>

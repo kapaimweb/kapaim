@@ -7,6 +7,11 @@ import { useState, useEffect } from "react";
 import classes from "./Topbar.module.css";
 const Topbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const handleScroll = () => {
     // Check the scrolling position of the window
@@ -27,22 +32,31 @@ const Topbar = () => {
   }, []);
   return (
     <Navbar
-      bg={isScrolled ? "secondary" : "tranparent"}
+      bg={isScrolled || isMobileMenuOpen ? "secondary" : "tranparent"}
       className={classes.nav}
       collapseOnSelect
       fixed='top'
-      expand='lg'>
+      expand='lg'
+      style={{ zIndex: "1000" }}>
       <Container>
         <Navbar.Brand href=''>
           <img src={logo} width='70' height='70' className='d-inline-block align-top' alt='Kapaim Band Logo' />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Toggle aria-controls='basic-navbar-nav' onClick={handleMobileMenuToggle} />
         <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className={`${classes.main_nav} me-auto`}>
-            <Nav.Link href='#hero'>דף הבית</Nav.Link>
-            <Nav.Link href='#about'>קצת עלינו</Nav.Link>
-            <Nav.Link href='#videos'>וידאו </Nav.Link>
-            <Nav.Link href='#contact'>צרו קשר </Nav.Link>
+          <Nav className={`${classes.main_nav} me-auto `}>
+            <Nav.Link onClick={handleMobileMenuToggle} href='#hero'>
+              דף הבית
+            </Nav.Link>
+            <Nav.Link onClick={handleMobileMenuToggle} href='#about'>
+              קצת עלינו
+            </Nav.Link>
+            <Nav.Link onClick={handleMobileMenuToggle} href='#videos'>
+              וידאו{" "}
+            </Nav.Link>
+            <Nav.Link onClick={handleMobileMenuToggle} href='#contact'>
+              צרו קשר{" "}
+            </Nav.Link>
           </Nav>
           <Nav className='me-auto'>
             <Nav.Link href='https://www.facebook.com/kapaym'>
