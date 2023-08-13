@@ -55,7 +55,7 @@ const Contact = () => {
               </Form.Group>
               <Form.Group className='mb-4'>
                 {/* <Form.Label className={classes.heebo}>אימייל</Form.Label> */}
-                <Form.Control placeholder='אימייל' name='email' required type='email' />
+                <Form.Control placeholder='אימייל' name='email' type='email' />
               </Form.Group>
             </Col>
             <Col lg={6} xl={6}>
