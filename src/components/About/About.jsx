@@ -11,7 +11,7 @@ const About = () => {
     <div id='about' className={classes.about}>
       <Container>
         <Row>
-          <h2 className={classes.about_h}>עלינו</h2>
+          <h2 className={classes.about_h}>מי אנחנו</h2>
         </Row>
         <Row>
           <Col xl={5}>
@@ -37,8 +37,8 @@ const About = () => {
             </p>
             <p>
               להקת כפיים הם: <strong>אשר קרוגר</strong>- גיטרה ושירה | <strong>גיא רודוביץ'</strong>- סקסופונים |
-              <strong> אילן זיו</strong>- אקורדיון | <strong>אבירם קושניר</strong> - גיטרה בס | <strong>דר לוי</strong>{" "}
-              - תופים
+              <strong> אילן זיו</strong>- אקורדיון | <strong>אבירם קושניר</strong> - גיטרה בס | <strong>דר לוי</strong>
+              תופים
             </p>
           </Col>
         </Row>

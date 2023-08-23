@@ -37,7 +37,7 @@ const Contact = () => {
     <div id='contact' className={classes.contact}>
       <Container>
         <Row>
-          <h2 className={classes.contact_h}>צרו קשר</h2>
+          <h2 className={classes.contact_h}>דברו איתנו </h2>
         </Row>
         <Form ref={formRef} onSubmit={handleSubmit} name='contact'>
           {/*this is for netlify bot to detect the form */}

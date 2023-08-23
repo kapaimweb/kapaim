@@ -15,12 +15,16 @@ const Footer = () => {
       <Container>
         <Row>
           <Col className={classes.footer_info} lg={6}>
-            <p>להקת כפיים </p>
             <div className='mb-3'>
               <div>
-                טלפון: <a href='tel:055-566-8759'>055-566-8759</a>
+                טלפון: <a href='tel:0555668759'>055-566-8759</a>
               </div>
-              מייל: <a href='mailto:kapaimband@gmail.com'> kapaim.live@gmail.com</a>
+              <div>
+                מייל: <a href='mailto:kapaimband@gmail.com'> kapaim.live@gmail.com</a>
+              </div>
+              <p className='mt-3'>
+                <strong>ניהול הרכב</strong>: אדוה קושניר
+              </p>
             </div>
             <small>אתר זה הונגש באמצעות ״נגיש לי״</small>
           </Col>

@@ -1,24 +1,23 @@
-import Topbar from "../components/Topbar/Topbar";
+// import Topbar from "../components/Topbar/Topbar";
 import Hero from "../components/Hero/Hero";
-import About from "../components/About/About";
+import WeddingsAbout from "../components/About/WeddingsAbout";
 import Videos from "../components/Videos/Videos";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
-
 import WhatsApp from "../components/WhatsApp/WhatsApp";
 
-import videoList from "../components/Videos/mainVideos";
-const Home = () => {
+import videoList from "../components/Videos/weddingVideos";
+const Weddings = () => {
   return (
     <>
       <WhatsApp />
-      <Topbar />
+
       <Hero />
-      <About />
+      <WeddingsAbout />
       <Videos videos={videoList} />
       <Contact />
       <Footer />
     </>
   );
 };
-export default Home;
+export default Weddings;

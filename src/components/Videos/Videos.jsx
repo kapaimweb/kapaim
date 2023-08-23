@@ -16,11 +16,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 //videoList
-import videoList from "./videoList";
+// import videoList from "./mainVideos";
 //
 import { useState } from "react";
 
-const Videos = () => {
+const Videos = ({ videos }) => {
   const [swiperInstance, setSwiperInstance] = useState(null);
 
   const handlePrevSlide = () => {
@@ -38,7 +38,7 @@ const Videos = () => {
     <div id='videos' className={classes.videos}>
       <Container>
         <Row>
-          <h2 className={classes.videos_h}>מה אנחנו מנגנים</h2>
+          <h2 className={classes.videos_h}>אז מה אנחנו מנגנים?</h2>
         </Row>
         <Row>
           <Col>
@@ -71,9 +71,9 @@ const Videos = () => {
               grabCursor='true'
               spaceBetween={10}
               slidesPerView={1}>
-              {videoList.map((video) => (
+              {videos.map((video) => (
                 <SwiperSlide key={video.id}>
-                  <Card className='text-center'>
+                  <Card>
                     <Card.Header> {video.title} </Card.Header>
                     <Card.Body>
                       <YouTube

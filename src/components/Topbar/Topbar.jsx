@@ -49,7 +49,7 @@ const Topbar = () => {
               דף הבית
             </Nav.Link>
             <Nav.Link onClick={handleMobileMenuToggle} href='#about'>
-              קצת עלינו
+              מי אנחנו
             </Nav.Link>
             <Nav.Link onClick={handleMobileMenuToggle} href='#videos'>
               וידאו{" "}
