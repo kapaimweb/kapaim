@@ -11,7 +11,6 @@ const Weddings = () => {
   return (
     <>
       <WhatsApp />
-
       <Hero />
       <WeddingsAbout />
       <Videos videos={videoList} />

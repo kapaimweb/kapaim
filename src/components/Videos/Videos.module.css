@@ -19,11 +19,10 @@
 .prevButton,
 .nextButton {
   color: #29378e;
-
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .youtube {

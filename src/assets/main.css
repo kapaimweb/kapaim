@@ -4525,7 +4525,8 @@ fieldset:disabled .btn {
   text-align: start;
   color: #f7d6ab;
   font-family: "heebo", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   background-color: var(--bs-card-cap-bg);
   border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }

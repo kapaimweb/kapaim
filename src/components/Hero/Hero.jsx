@@ -8,7 +8,7 @@ const Hero = () => {
     <div id='hero' className={classes.hero}>
       <div className={classes.content}>
         <img src={logo_text} alt='kapaim logo' className={classes.logo_img} />
-        <p>חגיגה ישראלית של גרוב ים-תיכוני בלקני</p>
+        <p>גרוב ים-תיכוני בלקני</p>
         <Button
           href='https://wa.me/972555668759?text=שלום%20להקת%20כפיים%20,%20אני%20מעוניין%20לשאול%20שאלה'
           className={classes.cta}>

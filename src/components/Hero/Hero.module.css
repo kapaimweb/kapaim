@@ -17,12 +17,6 @@
   width: 100%;
 }
 
-/* .content h1 {
-  font-family: "suez one", sans-serif;
-  font-size: 6.5rem;
-  margin-block: 20px;
-} */
-
 .logo_img {
   width: 25%;
   margin-bottom: 20px;
@@ -36,7 +30,6 @@
 
 .content button {
   font-family: "heebo", sans-serif;
-  font-size: 1.4rem;
 }
 
 .cta {
