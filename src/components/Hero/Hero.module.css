@@ -34,6 +34,28 @@
 
 .cta {
   font-family: "heebo", sans-serif;
+  background-color: #29378e;
+  padding: 10px 50px;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.cta:hover {
+  background-color: #29378ef3;
+}
+
+.cta:active {
+  background-color: #3040a6;
+}
+
+.cta_link {
+  text-decoration: none;
+}
+
+.cta_link:hover {
+  color: #fff;
 }
 
 .caret_wrap {
