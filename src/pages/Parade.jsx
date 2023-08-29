@@ -1,4 +1,5 @@
 // import Topbar from "../components/Topbar/Topbar";
+import Topbar from "../components/Topbar/Topbar";
 import Hero from "../components/Hero/Hero";
 import ParadeAbout from "../components/About/ParadeAbout";
 import Videos from "../components/Videos/Videos";
@@ -11,6 +12,7 @@ const Parade = () => {
   return (
     <>
       <WhatsApp />
+      <Topbar />
       <Hero />
       <ParadeAbout />
       <Videos videos={videoList} />

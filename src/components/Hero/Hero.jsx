@@ -1,11 +1,14 @@
 import classes from "./Hero.module.css";
 import { PiCaretDownBold } from "react-icons/pi";
-import { Button } from "react-bootstrap";
-import logo_text from "../../images/logo_text.png";
-
+import logo_text from "../../images/logo_text+tag.png";
+import video from "../../assets/website.mp4";
 const Hero = () => {
   return (
     <div id='hero' className={classes.hero}>
+      <video autoPlay loop muted className={classes.video}>
+        <source src={video} type='video/mp4' />
+        Your browser does not support the video tag.
+      </video>
       <div className={classes.content}>
         <img src={logo_text} alt='kapaim logo' className={classes.logo_img} />
         <p>גרוב ים-תיכוני בלקני</p>

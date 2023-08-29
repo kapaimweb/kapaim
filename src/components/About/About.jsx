@@ -54,7 +54,7 @@ const About = () => {
                     width: "100%",
                     playerVars: {
                       autoplay: 0,
-                      controls: 0,
+                      controls: 1,
                     },
                   }}
                 />
