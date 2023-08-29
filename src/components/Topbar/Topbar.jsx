@@ -61,13 +61,13 @@ const Topbar = () => {
             </Nav.Link>
           </Nav>
           <Nav className='me-auto'>
-            <Nav.Link target='_blank' href='https://www.facebook.com/kapaym'>
+            <Nav.Link aria-label='facebook' target='_blank' href='https://www.facebook.com/kapaym'>
               <BsFacebook />
             </Nav.Link>
-            <Nav.Link target='_blank' href='https://www.youtube.com/@kapaim9463'>
+            <Nav.Link aria-label='youtube' target='_blank' href='https://www.youtube.com/@kapaim9463'>
               <BsYoutube />
             </Nav.Link>
-            <Nav.Link target='_blank' href='https://www.instagram.com/kapaimband/'>
+            <Nav.Link aria-label='instagram' target='_blank' href='https://www.instagram.com/kapaimband/'>
               <BsInstagram />
             </Nav.Link>
           </Nav>

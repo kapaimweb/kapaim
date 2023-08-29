@@ -94,10 +94,10 @@ const Videos = ({ videos }) => {
               ))}
             </Swiper>
             <div className={classes.navigationArrows}>
-              <button className={classes.prevButton} onClick={handlePrevSlide}>
+              <button aria-label='nextVideo' className={classes.prevButton} onClick={handlePrevSlide}>
                 <PiCaretRightBold />
               </button>
-              <button className={classes.nextButton} onClick={handleNextSlide}>
+              <button aria-label='prevVideo' className={classes.nextButton} onClick={handleNextSlide}>
                 <PiCaretLeftBold />
               </button>
             </div>

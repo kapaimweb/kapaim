@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
       <div className={classes.caret_wrap}>
         <div className={classes.caret}>
-          <a href='#about'>
+          <a aria-label='scrollDown' href='#about'>
             <PiCaretDownBold />
           </a>
         </div>
