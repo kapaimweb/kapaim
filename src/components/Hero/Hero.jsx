@@ -5,7 +5,7 @@ import video from "../../assets/website.mp4";
 const Hero = () => {
   return (
     <div id='hero' className={classes.hero}>
-      <video autoPlay loop muted className={classes.video}>
+      <video controls='controls' preload='auto' autoPlay='autoplay' loop muted playsInline className={classes.video}>
         <source src={video} type='video/mp4' />
         Your browser does not support the video tag.
       </video>

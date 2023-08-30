@@ -11,25 +11,10 @@ const About = () => {
     <div id='about' className={classes.about}>
       <Container>
         <Row>
-          <h2 className={classes.about_h}>מי אנחנו</h2>
-        </Row>
-        <Row>
           <Col xl={5}>
-            <p>עם ניסיון של עשור בתחום - שמחים להביא את השמחה ואת האווירה הטובה לכל מקום אליו אנחנו מגיעים</p>
-            <p>
-              כפיים הם חמישה חברים שאוהבים לשמוח ולשמח. נעים על הציר המוזיקלי בין חאפלה ישראלית, לבין צלילי הבלקן,
-              טורקיה ויוון, תמיד באוזניים כרויות לשירים אליהם כולם יכולים להתחבר, לזוז ולהנות יחד.
-            </p>
-            <p>
-              להקת כפיים הוקמה ב-2013 בבית זית שבהרי ירושלים על ידי אשר וגיא, שכנים שהשאילו אחד לשני קמח וסוכר, ובהמשך
-              החליפו ניגונים, מזמורים ומקצבים. מאז הצטרפו נגנים נוספים, והרפרטואר העצום השתבח והתגבש לכדי מופע וירטואוזי
-              ועשיר.
-            </p>
-          </Col>
-          <Col className={classes.about_divider_col} xl={2}>
-            <div className={classes.about_divider}></div>
-          </Col>
-          <Col xl={5}>
+            <h2 className={classes.about_h}> מי אנחנו </h2>
+            <p>עם ניסיון של עשור בתחום - שמחים להביא את השמחה ואת האווירה הטובה לכל מקום אליו אנחנו מגיעים.</p>
+
             <p>
               במרוצת השנים הלהקה הופיעה על מאות במות ברחבי הארץ; פסטיבלים, אירועי תרבות עירוניים ואירועים פרטיים. לכפיים
               יתרון בולט של גמישות לצרכי האירוע: הרפרטואר של כפיים ורסטילי, נושק לז'אנרים רבים, ויכול להיות מותאם גם
@@ -41,25 +26,21 @@ const About = () => {
               תופים
             </p>
           </Col>
-        </Row>
-        <Row className='justify-content-center'>
-          <Col lg={6}>
-            <Card className='text-center'>
-              <Card.Header> </Card.Header>
-              <Card.Body>
-                <YouTube
-                  videoId='8G0N8GPtbIQ'
-                  className={classes.youtube}
-                  opts={{
-                    width: "100%",
-                    playerVars: {
-                      autoplay: 0,
-                      controls: 1,
-                    },
-                  }}
-                />
-              </Card.Body>
-            </Card>
+          <Col className={classes.about_divider_col} xl={2}>
+            <div className={classes.about_divider}></div>
+          </Col>
+          <Col xl={5}>
+            <YouTube
+              videoId='8G0N8GPtbIQ'
+              className={classes.youtube}
+              opts={{
+                width: "100%",
+                playerVars: {
+                  autoplay: 0,
+                  controls: 0,
+                },
+              }}
+            />
           </Col>
         </Row>
       </Container>
