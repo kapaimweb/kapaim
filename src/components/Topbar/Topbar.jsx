@@ -54,10 +54,10 @@ const Topbar = () => {
               מי אנחנו
             </Nav.Link>
             <Nav.Link onClick={handleMobileMenuToggle} href='#videos'>
-              וידאו{" "}
+              וידאו
             </Nav.Link>
             <Nav.Link onClick={handleMobileMenuToggle} href='#contact'>
-              צרו קשר{" "}
+              צרו קשר
             </Nav.Link>
           </Nav>
           <Nav className='me-auto'>

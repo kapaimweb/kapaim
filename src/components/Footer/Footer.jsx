@@ -16,17 +16,24 @@ const Footer = () => {
         <Row>
           <Col className={classes.footer_info} lg={6}>
             <div className='mb-3'>
-              <div>
-                טלפון: <a href='tel:0555668759'>055-566-8759</a>
-              </div>
-              <div>
-                מייל: <a href='mailto:kapaimband@gmail.com'> kapaim.live@gmail.com</a>
-              </div>
               <p className='mt-3'>
                 <strong>ניהול הרכב</strong>: אדוה קושניר
               </p>
+              <div>
+                <a href='tel:0555668759'>055-566-8759</a>
+              </div>
+              <div>
+                <a href='mailto:kapaimband@gmail.com'> kapaim.live@gmail.com</a>
+              </div>
             </div>
-            <small>אתר זה הונגש באמצעות ״נגיש לי״</small>
+            <div>
+              <a href='/weddings'>כפיים לחתונות ואירועים</a>
+              <br />
+              <a href='/parade'>כפיים בתהלוכה בלקנית</a>
+            </div>
+            <p className='mt-3'>
+              <small>אתר זה הונגש באמצעות ״נגיש לי״</small>
+            </p>
           </Col>
           <Col className='align-self-center' lg={6}>
             <Nav className={classes.footer_links}>
