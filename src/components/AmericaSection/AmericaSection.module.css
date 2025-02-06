@@ -1,0 +1,28 @@
+.about {
+  background-color: #29378e;
+  padding-block: 4rem;
+  color: #f7d6ab;
+  direction: ltr;
+  text-align: left;
+}
+
+.about_h {
+  font-family: "suez one", sans-serif;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-family: "heebo", sans-serif;
+  font-size: 1.8rem;
+}
+
+.about_divider_col {
+  display: flex;
+  justify-content: center;
+}
+
+.about_divider {
+  width: 2px;
+  background-color: rgba(247, 214, 171, 0.65);
+  height: 75%;
+}

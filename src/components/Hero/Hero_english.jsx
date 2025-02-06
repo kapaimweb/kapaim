@@ -15,8 +15,8 @@ const Hero = () => {
         <button className={classes.cta}>
           <a
             className={classes.cta_link}
-            href='https://wa.me/972502042538?text=שלום%20להקת%20כפיים%20,%20אני%20מעוניין%20לשאול%20שאלה'>
-            דברו איתנו
+            href='https://wa.me/972544500529?text=hi%20Kapayim%20Band,%20i%20would%20like%20some%20more%20details%20please'>
+            WhatsApp Us
           </a>
         </button>
       </div>
