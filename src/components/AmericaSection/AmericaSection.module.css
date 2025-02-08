@@ -3,7 +3,7 @@
   padding-block: 4rem;
   color: #f7d6ab;
   direction: ltr;
-  text-align: left;
+  text-align: center;
 }
 
 .about_h {
@@ -13,7 +13,7 @@
 
 .about p {
   font-family: "heebo", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .about_divider_col {
@@ -25,4 +25,12 @@
   width: 2px;
   background-color: rgba(247, 214, 171, 0.65);
   height: 75%;
+}
+
+.socialBigLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 5rem;
+  padding-top: 2rem;
 }

@@ -14,16 +14,23 @@ const AmericaSection = () => {
             <h2 className={classes.about_h}> </h2>
             <p>
               This upcoming Spring, we look forward to performing our music and bringing Israeli joy and resilience to
-              Jewish communities all over the United States, from New York to Arizona. We invite you to book us for your
-              upcoming events during the holiday period of Yom Hashoah, Yom Hazikaron, and Yom Ha'atzmaut.
+              Jewish communities all over the United States, from New York to Arizona.
             </p>
-
+            <p>***</p>
+            <p>
+              We invite you to book us for your upcoming events during the holiday period of
+              <b>Yom Hashoah, Yom Hazikaron, and Yom Ha'atzmaut.</b>
+            </p>
+            <p>***</p>
             <p>
               Our music features a unique and groovy blend of Jewish traditions from the Middle East and the Balkan
               region that will be sure to bring simcha and avira tova to all generations of your congregation or
-              community. Our band features saxophone, accordion, guitar, bass, and percussion - and we know how to bring
-              the <i style={{ fontWeight: "bold" }}>hafla</i>!
+              community.
+              <p>***</p>
+              Our band features saxophone, accordion, guitar, bass, and percussion - and we know how to bring the
+              <i style={{ fontWeight: "bold" }}> HAFLA</i>!
             </p>
+            <p>***</p>
 
             <p>
               <b>We have already booked shows at:</b>
@@ -33,7 +40,7 @@ const AmericaSection = () => {
               *Montreal,Canada - 1st of May 2025
               <br />
               <br />
-              so please be in touch to schedule with us while we still have availability, or if you have any questions.
+              Please be in touch to schedule with us while we still have availability, or if you have any questions.
             </p>
             <p>
               <b>Email</b> : kapaimband@gmail.com
@@ -47,27 +54,18 @@ const AmericaSection = () => {
                 here
               </a>
             </p>
-            <div>
-              <p>
-                <a aria-label='facebook' href='https://www.facebook.com/kapaym'>
-                  facebook:
-                  <BsFacebook className='ms-3' />
-                </a>
-              </p>
-              <p>
-                <a aria-label='instagram' href='https://www.instagram.com/kapaimband/'>
-                  Instagram:
-                  <BsInstagram className='ms-3' />
-                </a>
-              </p>
-              <p>
-                <a aria-label='youtube' href='https://www.youtube.com/@kapaim9463'>
-                  Youtube:
-                  <BsYoutube className='ms-3' />
-                </a>
-              </p>
-            </div>
           </Col>
+          <div className={classes.socialBigLinks}>
+            <a aria-label='facebook' href='https://www.facebook.com/kapaym'>
+              <BsFacebook className='ms-3' />
+            </a>
+            <a aria-label='instagram' href='https://www.instagram.com/kapaimband/'>
+              <BsInstagram className='ms-3' />
+            </a>
+            <a aria-label='youtube' href='https://www.youtube.com/@kapaim9463'>
+              <BsYoutube className='ms-3' />
+            </a>
+          </div>
         </Row>
       </Container>
     </div>
