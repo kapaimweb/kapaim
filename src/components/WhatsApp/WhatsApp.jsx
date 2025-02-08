@@ -4,7 +4,7 @@ const WhatsAppButton = () => {
   return (
     <div className={classes["whatsapp-button"]}>
       <a
-        href='https://wa.me/972555668759?text=שלום%20להקת%20כפיים%20,%20אני%20מעוניין%20לשאול%20שאלה'
+        href='https://wa.me/972502042538?text=שלום%20להקת%20כפיים%20,%20אני%20מעוניין%20לשאול%20שאלה'
         target='_blank'
         rel='noopener noreferrer'>
         <img src={whatsapp} alt='WhatsApp' />
