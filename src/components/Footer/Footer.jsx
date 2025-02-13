@@ -17,13 +17,17 @@ const Footer = () => {
           <Col className={classes.footer_info} lg={6}>
             <div className='mb-3'>
               <p className='mt-3'>
-                <strong>ניהול הרכב</strong>: אדוה קושניר
+                <strong>ניהול הרכב</strong>: גיא רודוביץ׳
               </p>
               <div>
-                <a href='tel:0555668759'>055-566-8759</a>
+                <a
+                  href='tel:050
+                  2042538'>
+                  050-204-2538
+                </a>
               </div>
               <div>
-                <a href='mailto:kapaimband@gmail.com'> kapaim.live@gmail.com</a>
+                <a href='mailto:kapaim.live@gmail.com'>kapaim.live@gmail.com</a>
               </div>
             </div>
             <div>
